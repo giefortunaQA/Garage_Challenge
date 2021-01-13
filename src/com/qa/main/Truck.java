@@ -1,10 +1,7 @@
 package com.qa.main;
 
 public class Truck extends Vehicle {
-	int wheelsCount=4;
-	public Truck(String name) {
-		this.name=name;
-	}
+
 
 	@Override
 	public void doors() {
@@ -16,6 +13,12 @@ public class Truck extends Vehicle {
 	public void wheels() {
 		System.out.println("I got 4 BIG BOI wheelzzzz ");
 		
+	}
+
+	@Override
+	public String type() {
+		// TODO Auto-generated method stub
+		return "Truck";
 	}
 
 }

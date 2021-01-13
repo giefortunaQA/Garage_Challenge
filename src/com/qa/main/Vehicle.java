@@ -1,16 +1,9 @@
 package com.qa.main;
 
 public abstract class Vehicle {
-	protected String name;
-	protected int wheelsCount;
+	public abstract String type();
+
 	
-	
-	public int getWheelsCount() {
-		return wheelsCount;
-	}
-	public void setWheelsCount(int wheelsCount) {
-		this.wheelsCount = wheelsCount;
-	}
 	public abstract void doors();
 	public abstract void wheels();
 	
@@ -22,7 +15,7 @@ public abstract class Vehicle {
 		}
 	@Override
 	public String toString() {
-		return "[name=" + name + "]";
+		return "[type " + type() + "]";
 	}
 	
 	
